@@ -129,18 +129,6 @@ void removeNode(TreeMap * tree, TreeNode* node)
             node->pair->value = min->pair->value;
             removeNode(tree, min);
         }
-        else
-        {
-            TreeNode * child;
-            if (node->left != NULL)
-            {
-                child = node->left;
-            }
-            else
-            {
-                child = node->right;
-            }
-        }
     }
 }
 
